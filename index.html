@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALENDER</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="bod">
+    <div id="navbar">
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact us</div>
+    </div>
+    <div id="sep">This website is able to predict the coreesponding day of the provided date.</div>
+    <div id="container">
+        <label for="date" style="margin-right: 4.6rem;" class="lab">day(dd):</label>
+        <input type="text"class="field" name="date" id="date" maxlength="2" required>
+        <br class="brake">
+        <label for="month" class="lab">month(mm):</label>
+        <input type="text"class="field" name="month" id="month" maxlength="2" required>
+        <br class="brake">
+        <label for="year" class="lab">year (yyyy):</label>
+        <input type="text"class="field" name="year" id="year" maxlength="4" required>
+        <br class="brake">
+        <input type="button" value="submit" id="submit">
+    </div>
+    <h1 id="nn"></h1>
+    <div id="footer">copyright &copy; 2023</div>
+    </div>
+</body>
+<style>
+    body{
+        margin: 0px;
+    }
+    #bod{
+        background-color: blue;  
+    }
+    #sep{
+        height: 100px;color: aliceblue;
+    }
+    #container{
+        background-color: green;
+        margin: 20px 20px 5px 25px;
+        border: 10px solid wheat;
+        padding: 10px;min-width: 5rem;
+    }
+    .lab{
+        color: yellow;
+        margin-right: 2.9rem;
+       }
+    #nn{color: aliceblue;text-align: center;
+    padding:2rem;margin:2rem;
+    }
+    #submit{
+        bottom: 100px;
+    }
+    .field{
+        width: 30px;
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: crimson;
+        padding: 0.5rem;color: aliceblue;
+    }
+    #footer{  
+        text-align:center ;
+        color: aliceblue;
+        position: static;
+    }
+</style>
+</html>
